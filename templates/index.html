@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <form class="feedback-form" action="/submit" method="post">
+        <h2>Share Your Feedback</h2>
+        
+        <div class="form-group">
+            <label for="name">Name*</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        
+        <div class="form-group">
+            <label>Rating*</label>
+            <div class="rating-options">
+                {% for i in range(1, 6) %}
+                <label>
+                    <input type="radio" name="rating" value="{{ i }}" {% if i == 5 %}checked{% endif %}>
+                    {{ i }} ★
+                </label>
+                {% endfor %}
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        
+        <button type="submit">Submit Feedback</button>
+        
+        <p class="required-note">* Required fields</p>
+    </form>
+{% endblock %}

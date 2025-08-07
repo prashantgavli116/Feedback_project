@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="feedback-list">
+        <h2>Submitted Feedback</h2>
+        <a href="{{ url_for('index') }}" class="return-btn">Back to Form</a>
+        
+        <div class="feedback-container">
+            {% for item in feedback %}
+            <div class="feedback-item">
+                <div class="feedback-header">
+                    <span class="feedback-name">{{ item[1] }}</span>
+                    <span class="feedback-rating">{{ '★' * item[3] }}</span>
+                    <span class="feedback-date">{{ item[5] }}</span>
+                </div>
+                {% if item[2] %}
+                <div class="feedback-email">Email: {{ item[2] }}</div>
+                {% endif %}
+                {% if item[4] %}
+                <div class="feedback-comments">{{ item[4] }}</div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

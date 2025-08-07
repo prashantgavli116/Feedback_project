@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="thank-you-message">
+        <h2>Thank You for Your Feedback!</h2>
+        <p>We appreciate you taking the time to share your thoughts with us.</p>
+        <div class="action-buttons">
+            <a href="{{ url_for('index') }}" class="return-btn">Submit Another Feedback</a>
+            <a href="{{ url_for('view_feedback') }}" class="view-feedback-btn">View All Feedback</a>
+        </div>
+    </div>
+{% endblock %}
