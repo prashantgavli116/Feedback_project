@@ -17,8 +17,14 @@ A simple and elegant web application built with **Flask** that collects user fee
 ---
 
 ## 🖼️ Project Preview
+### 1 :: First window
+<img width="1800" height="974" alt="Screenshot 2025-08-07 163833" src="https://github.com/user-attachments/assets/2e7fbd3b-b3c9-4a01-bf7d-42fcc85d0a6e" />
 
-![App Screenshot](https://via.placeholder.com/800x400.png?text=Feedback+App+Screenshot)
+### 2 :: After submited window
+<img width="1803" height="885" alt="Screenshot 2025-08-07 163941" src="https://github.com/user-attachments/assets/4bf63df8-3334-4c4e-a374-6e4f52947c3c" />
+
+### 3 :: Stored Data window
+<img width="858" height="813" alt="Screenshot 2025-08-07 164008" src="https://github.com/user-attachments/assets/ac15628f-a3c4-4a03-982a-26f2b38c362e" />
 
 ---
 
